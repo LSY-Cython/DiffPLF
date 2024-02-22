@@ -11,7 +11,7 @@ Datasets are available at:
 1) EV Charging Station Usage Open Data: https://www.kaggle.com/datasets/venkatsairo4899/ev-charging-station-usage-of-california-city <br />
 2) Meteostat weather forecasts: https://dev.meteostat.net/ <br />
 
-Implementation of the whole framework by running main.py:<br />
+Implementation of the whole framework by running main.py with the following mode configuration:<br />
 1) pretraining stage: isTrain=True;
 2) collecting profiles for subsequent refinement: isCollect=True;
 3) fine-tuning stage: isRefine=True;
