@@ -18,9 +18,6 @@ def plot_refine_loss(epoch_loss):
 def plot_prediction(preds, true, sign, isCollect, pred_len):
     true = np.array(true)[96-pred_len:]
     gen_samples = np.array(preds)[:, 96-pred_len:]
-    mae = np.mean(np.abs(gen_samples-true), axis=1)
-    low_100 = np.argsort(mae)[0:100]
-    gen_samples = gen_samples[low_100]
     median = np.percentile(gen_samples, q=50, axis=0)
     if not isCollect:
         img_path = f"generation/PI_{sign}.png"
